@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GlobeTravel — Agence de voyage</title>
+  <meta name="description" content="Site professionnel d'une agence de voyage — réservations, circuits, offres sur mesure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fich2.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">GlobeTravel</a>
+      <nav class="nav" id="main-nav">
+        <a href="#destinations">Destinations</a>
+        <a href="#offres">Offres</a>
+        <a href="#services">Services</a>
+        <a href="#contact" class="btn-outline">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-controls="main-nav">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Voyagez mieux. Voyages sur mesure — sans stress.</h1>
+          <p>Des circuits, vols, hébergements et services personnalisés pour tous vos projets d'évasion.</p>
+          <div class="hero-cta">
+            <a class="btn-primary" href="#offres">Voir les offres</a>
+            <a class="btn-ghost" href="#contact">Demander un devis</a>
+          </div>
+          <form class="search-form" aria-label="Recherche de voyages">
+            <input type="text" placeholder="Destination, ville ou pays" />
+            <input type="date" />
+            <button type="submit">Rechercher</button>
+          </form>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Plage paradisiaque"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>Ce que nous faisons</h2>
+        <p class="lede">Des services complets pour préparer votre voyage — clé en main ou à la carte.</p>
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>Circuits & itinéraires</h3>
+            <p>Nos experts construisent des itinéraires sur mesure selon vos envies et votre budget.</p>
+          </article>
+          <article class="card">
+            <h3>Réservation vols & hôtels</h3>
+            <p>Comparaison rapide et tarifs négociés pour un bon rapport qualité-prix.</p>
+          </article>
+          <article class="card">
+            <h3>Assistance 24/7</h3>
+            <p>Support avant, pendant et après le voyage — voyagez l'esprit tranquille.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations" class="section destinations">
+      <div class="container">
+        <h2>Destinations populaires</h2>
+        <div class="grid grid-3 cards-dest">
+          <article class="dest-card">
+            <img src="Maldive.jpg" alt="Paris"/>
+            <div class="dest-body">
+              <h4>Paris, France</h4>
+              <p>Culture, gastronomie et musées iconiques.</p>
+              <a class="link-small" href="#">Voir les offres</a>
+            </div>
+          </article>
+
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1526779259212-5c1a7c6b9b4f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Maldives"/>
+            <div class="dest-body">
+              <h4>Maldives</h4>
+              <p>Plages privées et séjours de luxe.</p>
+              <a class="link-small" href="#">Voir les offres</a>
+            </div>
+          </article>
+
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Tokyo"/>
+            <div class="dest-body">
+              <h4>Tokyo, Japon</h4>
+              <p>Technologie, tradition et cuisine exceptionnelle.</p>
+              <a class="link-small" href="#">Voir les offres</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="offres" class="section offers">
+      <div class="container">
+        <h2>Offres recommandées</h2>
+        <div class="grid grid-3">
+          <article class="offer">
+            <h3>Escapade romantique — 5 jours</h3>
+            <p class="price">À partir de <strong>€599</strong></p>
+            <ul>
+              <li>Vols aller-retour</li>
+              <li>Hôtel 4★ en centre-ville</li>
+              <li>Petit-déjeuner inclus</li>
+            </ul>
+            <a class="btn-outline" href="#">Réserver</a>
+          </article>
+
+          <article class="offer">
+            <h3>Aventure & randonnée — 10 jours</h3>
+            <p class="price">À partir de <strong>€1,299</strong></p>
+            <ul>
+              <li>Guide local</li>
+              <li>Transport inclus</li>
+              <li>Pension complète</li>
+            </ul>
+            <a class="btn-outline" href="#">Réserver</a>
+          </article>
+
+          <article class="offer">
+            <h3>Sur mesure — Groupe</h3>
+            <p class="price">Contact pour tarif</p>
+            <p>Conception d'un circuit selon vos besoins (entreprises, famille, scolaires).</p>
+            <a class="btn-outline" href="#contact">Demander un devis</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <h2>Témoignages</h2>
+        <div class="grid grid-3">
+          <blockquote class="quote">"Voyage parfait, organisation irréprochable — merci GlobeTravel !"<footer>— Julie R.</footer></blockquote>
+          <blockquote class="quote">"Un itinéraire sur mesure, des guides compétents. Recommandé."<footer>— Marc L.</footer></blockquote>
+          <blockquote class="quote">"Assistance 24/7 — nous avons été rassurés pendant notre séjour."<footer>— Famille D.</footer></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contactez-nous</h2>
+        <div class="contact-grid">
+          <form class="contact-form" aria-label="Formulaire de contact">
+            <label>Nom complet:<input type="text" required></label>
+            <br><br>
+            <label>Email      :<input type="email" required></label>
+            <br><br>
+            <label>Message <br><textarea rows="5" required></textarea></label><br>
+            <button class="btn-primary" type="submit">Envoyer</button>
+          </form>
+          <div class="contact-info">
+            <p><strong>Adresse :</strong> 12 rue du Voyage, 75001 Paris</p>
+            <p><strong>Tél :</strong> +33 1 23 45 67 89</p>
+            <p><strong>Email :</strong> contact@globe-travel.example</p>
+            <div class="small-note">Horaires d'ouverture : Lun–Ven 9:00–18:00</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> GlobeTravel -Hosni Nheri- Tous droits réservés.</div>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // petite interaction: toggler nav et année dynamique
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('main-nav');
+    btn.addEventListener('click', ()=> nav.classList.toggle('open'));
+    // fermeture du menu au clic sur lien (mobile)
+    nav.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=> nav.classList.remove('open')));
+  </script>
+</body>
+</html>
