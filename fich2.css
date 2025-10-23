@@ -365,4 +365,70 @@ a:hover {
 /* ========== UTILITAIRES ========== */
 .text-center {
     text-align: center;
+
 }
+/* ==============================
+   📱 ADAPTATION MOBILE (≤600px)
+   ============================== */
+@media (max-width: 600px) {
+
+  /* --- Header --- */
+  .header-inner {
+    flex-wrap: wrap;
+  }
+
+  .nav {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background: var(--color-light);
+    width: 180px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transform: translateX(120%);
+    transition: transform var(--transition);
+  }
+
+  .nav.open {
+    transform: translateX(0);
+  }
+
+  .nav a {
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  /* --- Hero section --- */
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+  }
+
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* --- Grilles générales --- */
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- Footer --- */
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
